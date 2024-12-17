@@ -20,7 +20,7 @@ class NetworkDataExtract():
         except Exception as e:
             raise NetworkSecurityException(e, sys)
     
-    def csv_tojson_convertor(self):
+    def csv_to_json_convertor(self):
         try:
             pass
         except Exception as e:
