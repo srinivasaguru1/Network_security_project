@@ -48,3 +48,5 @@ class DataIngestion:
             pass
         except Exception as e:
             raise NetworkSecurityException(e, sys)
+        
+    
