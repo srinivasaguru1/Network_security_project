@@ -34,7 +34,7 @@ class TrainingPipeline:
     is_pipeline_running=False
     def __init__(self):
          self.training_pipeline_config = TrainingPipelineConfig()
-         self.s3_sync = S3Sync()
+         
     def start_data_ingestion(self):
         try:
             self.data_ingestion_config=DataIngestionConfig(training_pipeline_config=self.training_pipeline_config)
@@ -79,7 +79,8 @@ class TrainingPipeline:
         
     def run_pipeline(self):
         try:
-            pass
+            data_ingestion_artifact= self.start_data_ingestion()
+            print(data_ingestion_artifact)
         except Exception as e:
             raise NetworkSecurityException(e, sys)
   

@@ -1,6 +1,8 @@
 .env
 venv
 networksecurity.egg-info
+logs/debug.log
+*.log
 logs
 Artifacts
 __pycache
