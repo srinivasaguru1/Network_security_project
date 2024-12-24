@@ -5,4 +5,4 @@ logs/debug.log
 *.log
 logs
 Artifacts
-__pycache
+__pycache__
