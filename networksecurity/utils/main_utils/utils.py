@@ -75,3 +75,7 @@ def load_object(file_path: str, ) -> object:
             return pickle.load(file_obj)
     except Exception as e:
         raise NetworkSecurityException(e, sys) from e
+    
+
+
+
