@@ -6,3 +6,4 @@ logs/debug.log
 logs
 Artifacts
 __pycache__
+mlruns

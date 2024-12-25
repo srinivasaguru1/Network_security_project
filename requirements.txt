@@ -9,5 +9,15 @@ dill
 pyyaml
 xgboost
 mlflow
+fastapi
+ipykernel
+uvicorn
+apache-airflow
+dvc
+jinja2
+python-multipart
+
+
+
 
 -e .
