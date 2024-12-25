@@ -33,7 +33,7 @@ from networksecurity.entity.artifact_entity import (
 class TrainingPipeline:
     is_pipeline_running=False
     def __init__(self):
-         self.training_pipeline_config = TrainingPipelineConfig()
+        self.training_pipeline_config = TrainingPipelineConfig()
          
     def start_data_ingestion(self):
         try:
@@ -43,7 +43,7 @@ class TrainingPipeline:
             data_ingestion_artifact=data_ingestion.initiate_data_ingestion()
             logging.info(f"Data ingestion completed and artifact: {data_ingestion_artifact}")
             return data_ingestion_artifact
-            
+    
         except Exception as e:
             raise NetworkSecurityException(e, sys)
 
@@ -85,12 +85,15 @@ class TrainingPipeline:
         except Exception as e:
             raise NetworkSecurityException(e, sys)
     
-    def start_model_evaluation(self):
+    def start_model_evaluation(self,data_validation_artifact:DataValidationArtifact,
+                                 model_trainer_artifact:ModelTrainerArtifact):
         try:
-            pass
+            model_evaluation_config:ModelEvaluationConfig=ModelEvaluationConfig(training_pipeline_config=self.training_pipeline_config)
+            model_eval=ModelEvaluation(model_evaluation_config,data_validation_artifact,model_trainer_artifact)
+            model_eval_artifact=model_eval.initiate_model_evaluation()
+            return  model_eval_artifact
         except Exception as e:
-            raise NetworkSecurityException(e, sys)
-        
+            raise NetworkSecurityException(e,sys)
     def start_model_pusher(self):
         try:
             pass
@@ -105,13 +108,13 @@ class TrainingPipeline:
             #print(data_validation_artifact)
             data_transformation_artifact=self.start_data_transformation(data_validation_artifact=data_validation_artifact)
             #print(data_transformation_artifact)
+            model_trainer_artifact=self.start_model_trainer(data_transformation_artifact=data_transformation_artifact)
+        
+            model_eval_artifact=self.start_model_evaluation(data_validation_artifact=data_validation_artifact,model_trainer_artifact=model_trainer_artifact)
+            if not model_eval_artifact.is_model_accepted:
+                #raise Exception("Trained model is not better than the best model")
+                print("Trained model is not better than the best model")
+            print(model_eval_artifact)
         except Exception as e:
             raise NetworkSecurityException(e, sys)
-
-
-
-
-
-
-
-
+        
