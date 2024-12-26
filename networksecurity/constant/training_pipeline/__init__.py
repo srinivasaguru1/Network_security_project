@@ -75,7 +75,7 @@ Model Pusher related constant start with MODEL_PUSHER VAR NAME
 MODEL_PUSHER_DIR_NAME = "model_pusher"
 MODEL_PUSHER_SAVED_MODEL_DIR = SAVED_MODEL_DIR
 
-TRAINING_BUCKET_NAME = "mynetworksecurity"
+TRAINING_BUCKET_NAME = "mynetworksecurity1"
 PREDICTION_BUCKET_NAME = "my-network-datasource"
 PREDICTION_DIR= "prediction"
 
