@@ -1,0 +1,65 @@
+[33ma845579[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m Remove AWS key from the code
+[33mfdd0562[m updated workflow
+[33m52f61ef[m updated workflow
+[33m1976a47[m updated workflow
+[33m95a901e[m update workflow
+[33mab84746[m updated workflow
+[33ma55a495[m update workflow
+[33mcfd14f6[m[33m ([m[1;31morigin/main[m[33m)[m Update main.yaml
+[33m2ea0e07[m updated workflow
+[33mc9f430e[m updated workflow
+[33m4baf884[m updated the infrastructure
+[33m5acd3b3[m updated workflow
+[33m3352de7[m update workflow
+[33m2b51aac[m update workflow
+[33m0d2d8f3[m updated workflow
+[33m8950499[m workflow updated
+[33m38ff851[m update the workflow
+[33m5b5b817[m update the workflow
+[33me3a99e2[m update the workflow
+[33m5a09c41[m Merge branch 'main' of https://github.com/srinivasaguru1/Network_security_project
+[33m34cfb37[m update the workflow
+[33m8e6976b[m Delete .github/workflows directory
+[33m83f329a[m update the workflow
+[33mf98ad53[m Create docker-image.yml
+[33mca0f964[m Create aws.yml
+[33m1178a1b[m Create docker-publish.yml
+[33m4e15216[m updated workflow
+[33md93bbde[m code updted
+[33m1857683[m main.py is updated
+[33mcd550dc[m main.py updated
+[33m1f55d03[m update main.py
+[33m3edd347[m docker updated
+[33m66af752[m main.py updated
+[33m3b541bc[m docker updated
+[33m59187c0[m cloud folder updated
+[33m575ae8e[m infrastructure code is updated
+[33mc61a0d6[m all components added
+[33m1b17777[m model evaluation code is ready
+[33m9f114a8[m model training preparation is done
+[33md89318a[m model trainer code is ready and main component needed
+[33md2ee0d2[m data transformation updated
+[33mda7640e[m data transformation is updated
+[33m0978737[m data validation completed
+[33m3d7af64[m data validation data is ready
+[33m11643b1[m data validation config and entity is added
+[33mea7d853[m data validation started
+[33m951cbf9[m code upto date
+[33m279fc1c[m data_ingestion is ready
+[33m8e22cf4[m config and artifact is ready
+[33m17b8789[m data ingestion code has written
+[33md7ede0f[m constant value is updated
+[33m85ccdc6[m config and artifact structure updated
+[33m3850fa0[m data validation structure is ready
+[33md107376[m training pipeline structure updated
+[33m1eedd20[m components structure added
+[33ma29c29e[m training master file updated
+[33mb7b7e21[m getdata.py is added
+[33m9c07f62[m exception and logger and data updated
+[33m444c93d[m install required packages
+[33m0dd8456[m setup.py and requirements added
+[33m42e53c2[m get_data.py is added
+[33m55abf87[m folder structure ready
+[33m260acb0[m notebook file added
+[33mef1bbc3[m data is added
+[33m8db277f[m folder is created and readme added
