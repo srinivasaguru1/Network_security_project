@@ -12,11 +12,12 @@ ENV AIRFLOW_CORE_DAGBAG_IMPORT_TIMEOUT=1000
 ENV AIRFLOW_CORE_ENABLE_XCOM_PICKLING=True
 RUN airflow db migrate
 RUN airflow users create \
-    --username admin \
-    --firstname Peter \
-    --lastname Parker \
-    --role Admin \
-    --email spiderman@superhero.org
+    -u admin \
+    -p admin \
+    -f Peter \
+    -l Parker \
+    -r Admin \
+    -e spiderman@superhero.org
 
 RUN airflow api-server --port 8080
 
