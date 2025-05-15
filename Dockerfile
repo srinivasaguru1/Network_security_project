@@ -13,11 +13,18 @@ ENV AIRFLOW_CORE_ENABLE_XCOM_PICKLING=True
 RUN airflow db migrate
 RUN airflow users create \
     --username admin \
-    --firstname Admin \
-    --lastname User \
+    --firstname Peter \
+    --lastname Parker \
     --role Admin \
-    --email admin@example.com \
-    --password admin
+    --email spiderman@superhero.org
+
+RUN airflow api-server --port 8080
+
+RUN airflow scheduler
+
+RUN airflow dag-processor
+
+RUN airflow triggerer
 RUN chmod 777 start.sh
 RUN apt update -y
 ENTRYPOINT [ "/bin/sh" ]
